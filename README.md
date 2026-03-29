@@ -1,1 +1,1 @@
-# Prediction-du-diabete-avec-Machine-Learning-et-deploiement-MLOps-scalable
+# Prediction-du-diabete-avec-Machine-Learning-et-deploiement-MLOps-scalablepip install -r requirements.txt
