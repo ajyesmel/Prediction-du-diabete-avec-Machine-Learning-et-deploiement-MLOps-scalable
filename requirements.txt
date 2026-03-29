@@ -1,6 +1,13 @@
-numpy
 pandas
-sklearn
-shap
+numpy
+scikit-learn
+matplotlib
+seaborn
+plotly
 xgboost
 lightgbm
+shap
+mlflow
+fastapi
+uvicorn
+joblib
