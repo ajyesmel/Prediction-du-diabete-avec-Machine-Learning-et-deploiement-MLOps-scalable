@@ -3,6 +3,9 @@ import pandas as pd
 import joblib
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import classification_report, confusion_matrix, accuracy_score
+from sklearn.model_selection import GridSearchCV
+import mlflow 
+
 
 from preprocessing import chargement_des_donnees, remplacer_les_donnees_manquantes, selection_des_variables, normalisation_des_donnees
 
