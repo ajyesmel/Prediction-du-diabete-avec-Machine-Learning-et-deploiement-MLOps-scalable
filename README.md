@@ -186,7 +186,7 @@ docker run -p 8000:8000 diabetes-api
 
 ## 👩‍💻 Auteur
 
-Esmela Marie\
+Esmel Amary Jean-Yves\
 Data Scientist \| Machine Learning \| IA Médicale
 
 ------------------------------------------------------------------------
