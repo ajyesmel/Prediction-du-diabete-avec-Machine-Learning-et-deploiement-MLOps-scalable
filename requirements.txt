@@ -1,13 +1,20 @@
-pandas
-numpy
-scikit-learn
-matplotlib
-seaborn
-plotly
-xgboost
-lightgbm
-shap
-mlflow
-fastapi
-uvicorn
-joblib
+# Noyau Data Science (Compatibilité binaire assurée)
+numpy==1.26.4
+pandas==2.2.2
+
+# Machine Learning & Boosting
+scikit-learn==1.4.2
+xgboost==2.0.3
+lightgbm==4.3.0
+joblib==1.4.2
+
+# Visualisation & Interprétabilité
+matplotlib==3.8.4
+seaborn==0.13.2
+plotly==5.22.0
+shap==0.45.1
+
+# MLOps & API
+mlflow==2.12.1
+fastapi==0.111.0
+uvicorn==0.29.0

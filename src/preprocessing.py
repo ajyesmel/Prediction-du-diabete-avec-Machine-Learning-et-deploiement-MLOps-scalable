@@ -1,8 +1,9 @@
 
 import numpy as np
 import pandas as pd
-from sklearn.model_selection import train_test_split
+from sklearn.model_selection import train_test_split, GridSearchCV
 from sklearn.preprocessing import StandardScaler
+from sklearn.ensemble import RandomForestClassifier
 import joblib 
 
 
@@ -13,7 +14,7 @@ def chargement_des_donnees (path):
 # Remplacer les valeurs manquantes par NaN
 def remplacer_les_donnees_manquantes(data): 
     cols = ['Glucose', 'BloodPressure', 'SkinThickness', 'Insulin', 'BMI']
-    data[cols] = data[cols].replace(0, np.NaN)
+    data[cols] = data[cols].replace(0, np.nan)
 
 # Remplacer les valeurs manquantes par la mediane de chaque colonne
     data.fillna(data.median(), inplace=True)
@@ -24,8 +25,7 @@ def remplacer_les_donnees_manquantes(data):
 def selection_des_variables(data):
     X = data.drop('Outcome', axis=1)
     y = data['Outcome']
-    return X_train, X_test, y_train, y_test = train_test_split(X,y, test_size=0.2, random_state=42)
-
+    return train_test_split(X, y, test_size=0.2, random_state=42)
 
 # Normaliser les données 
 def normalisation_des_donnees(X_train, X_test):
