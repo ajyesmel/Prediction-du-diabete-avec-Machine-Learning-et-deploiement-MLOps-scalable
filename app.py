@@ -11,7 +11,7 @@ st.set_page_config(
 )
 
 # Charger le modèle et le scaler
-@st.cache_ressource
+@st.cache_resource
 def load_model():
     model = joblib.load("models/model.pkl")
     scaler = joblib.load("scalers/scaler.pkl")
