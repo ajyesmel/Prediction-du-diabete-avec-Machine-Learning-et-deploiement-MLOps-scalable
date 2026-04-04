@@ -409,4 +409,4 @@ if st.session_state.historique:
     if st.button("🗑️ Effacer l'historique"):
         st.session_state.historique = []
         # st.rerun() : force Streamlit à recharger la page
-        st.rerun() 
+        st.rerun()
